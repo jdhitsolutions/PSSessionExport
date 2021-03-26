@@ -12,7 +12,7 @@
 RootModule = 'PSSessionExport'
 
 # Version number of this module.
-ModuleVersion = '0.9.1'
+ModuleVersion = '0.10.0'
 
 # Supported PSEditions
 CompatiblePSEditions = @("Desktop","Core")

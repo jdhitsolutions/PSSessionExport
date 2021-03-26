@@ -27,4 +27,4 @@ The project isn't 100% complete. These items should be addressed.
 - Export custom type. Maybe use the [PSTypeExtensionTools](https://github.com/jdhitsolutions/PSTypeExtensionTools) module and let the user specify what type extensions to export. Anything that was extended by a module should be already be taken care of.
 - help documentation
 
-Last updated *2021-03-26 14:19:39Z*
+Last updated *2021-03-26 15:23:30Z*
