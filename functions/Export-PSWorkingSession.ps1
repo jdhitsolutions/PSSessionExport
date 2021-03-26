@@ -60,7 +60,6 @@ Function Export-PSWorkingSession {
     if ($ExportPSSession) {
         Write-Verbose "Exporting PSSessions"
 
-        $ciProperties = @("MaximumReceivedDataSizePerCommand", "MaximumReceivedObjectSize", "NoMachineProfile", "ProxyAccessType", "ProxyAuthentication", "ProxyCredential", "SkipCACheck", "SkipCNCheck", "SkipRevocationCheck", "NoEncryption", "UseUTF16", "OutputBufferingMode", "IncludePortInSPN", "MaxConnectionRetryCount", "Culture", "UICulture", "OpenTimeout", "CancelTimeout", "OperationTimeout", "IdleTimeout")
         $sessions = Get-PSSession | Where-Object { $_.state -eq "Opened" }
         $all = foreach ($session in $sessions) {
             $ci = $session.runspace.connectioninfo
@@ -77,6 +76,7 @@ Function Export-PSWorkingSession {
             }
 
             #add connection info
+            $ciProperties = @("MaximumReceivedDataSizePerCommand", "MaximumReceivedObjectSize", "NoMachineProfile", "ProxyAccessType", "ProxyAuthentication", "ProxyCredential", "SkipCACheck", "SkipCNCheck", "SkipRevocationCheck", "NoEncryption", "UseUTF16", "OutputBufferingMode", "IncludePortInSPN", "MaxConnectionRetryCount", "Culture", "UICulture", "OpenTimeout", "CancelTimeout", "OperationTimeout", "IdleTimeout")
             $ciHash = @{}
             foreach ($property in $ciProperties) {
                 #" $property = $($ci.$property)"
