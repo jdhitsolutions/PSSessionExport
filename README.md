@@ -18,13 +18,17 @@ The module includes functions to import individual items such as Aliases or PSDr
 
 ![Import a session](images/import.png)
 
+Additional background information on this module can be found at <https://jdhitsolutions.com/blog/powershell/8252/answering-the-powershell-export-challenge/>.
+
 ## To Do
 
-The project isn't 100% complete. These items should be addressed.
+The project isn't 100% complete. These items should be addressed:
 
-- Export PSReadline Options
+- PSReadline Options and keyhandlers
+- CIMSession Options
+- PowerShell 7 Experimental Features
 - Export custom format data. This should be added from module imports. But there may be stand-alone formats.
 - Export custom type. Maybe use the [PSTypeExtensionTools](https://github.com/jdhitsolutions/PSTypeExtensionTools) module and let the user specify what type extensions to export. Anything that was extended by a module should be already be taken care of.
-- help documentation
+- Help documentation
 
-Last updated *2021-03-26 15:23:30Z*
+Last updated *2021-03-26 19:53:51Z*
