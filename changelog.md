@@ -3,6 +3,7 @@
 ## 0.10.0
 
 + Restructured module layout.
++ Updated module manifest
 
 ## 0.9.1
 

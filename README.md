@@ -30,5 +30,3 @@ The project isn't 100% complete. These items should be addressed:
 - Export custom format data. This should be added from module imports. But there may be stand-alone formats.
 - Export custom type. Maybe use the [PSTypeExtensionTools](https://github.com/jdhitsolutions/PSTypeExtensionTools) module and let the user specify what type extensions to export. Anything that was extended by a module should be already be taken care of.
 - Help documentation
-
-Last updated *2021-03-26 19:53:51Z*
